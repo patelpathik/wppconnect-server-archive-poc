@@ -10,6 +10,7 @@ export interface ServerOptions {
   tokenStoreType: string;
   maxListeners: number;
   customUserDataDir: string;
+  efsMountContainerPath: string;
   webhook: {
     url: string;
     autoDownload: boolean;
@@ -65,5 +66,9 @@ export interface ServerOptions {
     access_key_id: string | null;
     secret_key: string | null;
     defaultBucketName: string | null;
+  };
+  proxy: {
+    user: string;
+    pass: string;
   };
 }
